@@ -3,14 +3,14 @@
 
 1- What would you do differently on a managed cluster (EKS, GKE...) regarding step 4?
 response : 
-
+##
 2. How would you monitor the application?
 response: 
 Since I am using Kind the better way is to include metric api and using kubectl top. 
 for a sample cluster one master node : 
 download this :
 > kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
-then use kubectl top pod webapp
+> then use kubectl top pod webapp
 
 3. What would you change to add a PostgreSQL container?
 I would add storage volume. 
