@@ -6,11 +6,6 @@
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 739-418-714
-127.0.0.1 - - [19/Oct/2022 10:15:17] "GET /pod-id/ HTTP/1.1" 404 -
-127.0.0.1 - - [19/Oct/2022 10:15:20] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [19/Oct/2022 10:15:25] "GET /pod-id/ HTTP/1.1" 404 -
-127.0.0.1 - - [19/Oct/2022 10:15:42] "GET /pod_id/ HTTP/1.1" 404 -
-127.0.0.1 - - [19/Oct/2022 10:15:51] "GET /pod_id HTTP/1.1" 200 -
-127.0.0.1 - - [19/Oct/2022 10:35:48] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [19/Oct/2022 10:36:07] "GET /pod_id HTTP/1.1" 200 -
+ * Debugger PIN: 151-480-195
+127.0.0.1 - - [19/Oct/2022 15:39:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Oct/2022 15:40:02] "GET /pod_id HTTP/1.1" 200 -
