@@ -1,0 +1,13 @@
+apiVersion: v1
+data:
+  app.py: "import sys\r\nfrom flask import Flask, request\r\n\r\napp = Flask(__name__)\r\n\r\n@app.route('/')\r\ndef
+    hello():\r\n    return 'Hello GitGuardian!.\\n'\r\n\r\n@app.route('/<string:pod_id>')\r\ndef
+    getPodId(pod_id):\r\n    pod_id=sys.argv[1]\r\n    return '{}'.format(pod_id)\r\n\r\nif
+    __name__ == \"__main__\":\r\n    app.run(debug=\"true\", host='0.0.0.0')"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2022-10-19T10:13:48Z"
+  name: flask-app
+  namespace: default
+  resourceVersion: "154857"
+  uid: 72418633-5c37-4006-b92a-f6d7f5f8cfe7

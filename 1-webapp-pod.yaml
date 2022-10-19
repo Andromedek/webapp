@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp
+  labels:
+    app: flask
+spec:       
+  containers:
+    - name: webapp
+      image: nikunjv/flask-image:grey
+      ports: 
+      - containerPort: 5000
+      volumeMounts:
+      - name: flask-app 
+        mountPath: /app
+  volumes:
+  - name: flask-app
+    configMap:
+      name: flask-app
+
+
+  
+     

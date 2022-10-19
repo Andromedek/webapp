@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  app.py: "from flask import Flask\r\n\r\napp = Flask(__name__)\r\n\r\n@app.route('/')\r\ndef
+    hello():\r\n    return 'Hello GitGuardian!.\\n'\r\n\r\nif __name__ == \"__main__\":\r\n
+    \   app.run(debug=\"true\", host='0.0.0.0')"
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2022-10-18T15:11:45Z"
+  name: flask-app
+  namespace: default
+  resourceVersion: "114052"
+  uid: c3877494-cd7e-4572-bd01-a1b0a48730f3

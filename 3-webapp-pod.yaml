@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapp
+  labels:
+    app: flask
+spec:       
+  containers:
+    - name: webapp
+      image: nikunjv/flask-image:grey
+      ports: 
+      - containerPort: 5000
+      env:
+      - name: MY_POD_ID
+        valueFrom:
+          fieldRef:
+            fieldPath: metadata.uid
+      command: ["python", "app.py"]
+      args: ["$(MY_POD_ID)"]
+      volumeMounts:
+      - name: flask-app 
+        mountPath: /app
+  volumes:
+  - name: flask-app
+    configMap:
+      name: flask-app
+
+
+  
+     

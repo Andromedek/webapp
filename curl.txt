@@ -1,0 +1,5 @@
+curl localhost:5000/
+Hello GitGuardian!.
+
+curl localhost:5000/pod_id
+0f738cea-87d4-4851-bd6f-abf2b094cbd6
